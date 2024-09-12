@@ -113,4 +113,4 @@ def updateMovie(id):
 
 if __name__ == "__main__":
     moviesRepo = read_movies_from_csv("imdb_top_1000.csv")
-    app.run()
+    app.run(host='0.0.0.0')
