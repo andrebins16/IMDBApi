@@ -43,7 +43,7 @@ def deleteMovieById(id):
     for movie in moviesRepo:
         if(movie["Id"] == id):
             moviesRepo.remove(movie)
-            return "Filme removido", 200
+            return movie["Series_Title"] + " removido", 200
     return {"erro": 'Filme nao encontrado'}, 404
 
 @app.post("/movie")
@@ -106,7 +106,7 @@ def updateMovie(id):
                     movie["Star2"]=body["Star2"]
                 if "Released_Year" in body:
                     movie["Released_Year"]=body["Released_Year"]
-                return "Filme atualizado",200
+                return jsonify(movie),200
         return {"erro": 'Filme nao encontrado'}, 404
     else:
              return {"erro":"Formato deve ser JSON"}, 415
