@@ -1,11 +1,10 @@
 {
 	"info": {
-		"_postman_id": "268cc5e4-031f-45ba-8d08-4b9eacb2610f",
+		"_postman_id": "4f219337-79c8-4292-b681-7a9ffa4d4d41",
 		"name": "REST Api - IMDB",
 		"description": "Rest api que faz requisições para um database dos 1000 melhores filmes do site IMDB. Contém os métodos para retornar todos os filmes e filmes específicos por Id, adicionar um novo filme, deletar filmes existentes ou atualizar filmes já presentes na database.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "26721178",
-		"_collection_link": "https://t2team-1074.postman.co/workspace/b687890f-c1e5-4be9-a865-90e0acca38be/collection/26721178-268cc5e4-031f-45ba-8d08-4b9eacb2610f?action=share&source=collection_link&creator=26721178"
+		"_exporter_id": "38291822"
 	},
 	"item": [
 		{
@@ -138,7 +137,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://imdbapi-gi8p.onrender.com/movie/999",
+					"raw": "https://imdbapi-gi8p.onrender.com/movie/209",
 					"protocol": "https",
 					"host": [
 						"imdbapi-gi8p",
@@ -147,7 +146,7 @@
 					],
 					"path": [
 						"movie",
-						"999"
+						"209"
 					]
 				},
 				"description": "Retorna o filme especificado pelo Id, ou um erro caso não existal tal Id."
@@ -335,7 +334,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://imdbapi-gi8p.onrender.com/movie/10000",
+					"raw": "https://imdbapi-gi8p.onrender.com/movie/100",
 					"protocol": "https",
 					"host": [
 						"imdbapi-gi8p",
@@ -344,7 +343,7 @@
 					],
 					"path": [
 						"movie",
-						"10000"
+						"100"
 					]
 				},
 				"description": "Deleta um filme de acordo com Id informado. Retorna o nome do filme removido caso a operação ocorra com sucesso, ou um erro caso o filme não seja encontrado."
@@ -754,7 +753,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"Series_Title\": \"Test\"\n}",
+					"raw": "{\n\t\"Series_Title\": \"New Name\",\n    \"Released_Year\": 2024\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -792,7 +791,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://imdbapi-gi8p.onrender.com/movie/2000",
+							"raw": "https://imdbapi-gi8p.onrender.com/movie/209",
 							"protocol": "https",
 							"host": [
 								"imdbapi-gi8p",
@@ -801,7 +800,7 @@
 							],
 							"path": [
 								"movie",
-								"2000"
+								"209"
 							]
 						}
 					},
